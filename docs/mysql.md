@@ -149,6 +149,18 @@ ALTER TABLE t ADD column;
 ALTER TABLE t DROP COLUMN c ;
 ```
 
+修改表中列注释
+
+```sql
+ALTER TABLE t MODIFY COLUMN column_name COMMENT  '注释';
+```
+
+修改表中列类型长度
+
+```sql
+ALTER TABLE t MODIFY COLUMN column_name varchar2(128);
+```
+
 添加约束
 
 ```sql
